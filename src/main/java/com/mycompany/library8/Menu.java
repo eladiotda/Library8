@@ -16,7 +16,7 @@ public class Menu {
         preloadData(); // Precarga de datos al iniciar el menú
     }
 
-    // Método para iniciar el menú
+    // logg
     public void start() {
         boolean exitProgram = false;
         while (!exitProgram) {
@@ -29,7 +29,7 @@ public class Menu {
         System.out.println("Program has ended.");
     }
 
-    // Precarga de datos
+    // datos
     private void preloadData() {
         materials.add(new Material("001", "Book", "Introduction to Java", "John Doe", 5));
         materials.add(new Material("002", "Magazine", "Tech Today", "Jane Smith", 3));
@@ -68,10 +68,10 @@ public class Menu {
             }
         }
 
-        return null;  // Retornar null si fallan 3 intentos
+        return null;  // 3 intent
     }
 
-    // Mostrar menú basado en el rol del usuario
+    // rol user
     private boolean displayMenu(User currentUser) {
         boolean exitMenu = false;
         while (!exitMenu) {
@@ -104,7 +104,7 @@ public class Menu {
 
             System.out.print("Select an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine();  // Consumir el salto de línea
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -174,7 +174,7 @@ public class Menu {
         return false;  // retur
     }
 
-    // Métodos de administración de materiales y usuarios
+    
     private void modifyMaterial() {
         System.out.print("Ente material code to modif: ");
         String code = scanner.nextLine();
